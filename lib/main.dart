@@ -84,6 +84,14 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
+        Row(
+          children: <Widget>[
+            Icon(
+              Icons.check,
+              color: Colors.green,
+            ),
+          ],
+        ),
         //TODO: Add a Row here as your score keeper
       ],
     );
