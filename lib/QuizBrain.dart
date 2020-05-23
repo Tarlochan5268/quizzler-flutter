@@ -1,7 +1,7 @@
 import 'package:quizzler/Question.dart';
 
 class QuizBrain {
-  List<Question> questionsBank = [
+  List<Question> _questionsBank = [
     new Question('You can lead a cow down stairs but not up stairs.', false),
     new Question(
         'Approximately one quarter of human bones are in the feet.', true),
@@ -33,4 +33,12 @@ class QuizBrain {
         'In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.',
         true),
   ];
+
+  String getQuestion(int quesNumber) {
+    return _questionsBank[quesNumber].question;
+  }
+
+  bool getAnswer(int quesNumber) {
+    return _questionsBank[quesNumber].answer;
+  }
 }
