@@ -41,6 +41,19 @@ class QuizBrain {
     }
   }
 
+  bool isFinished() {
+    if (_quesNumber >= _questionsBank.length - 1) {
+      print('Now returning true');
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  void reset() {
+    _quesNumber = 0;
+  }
+
   String getQuestion() {
     return _questionsBank[_quesNumber].question;
   }
